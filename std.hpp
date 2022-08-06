@@ -9,7 +9,6 @@ public:
 	void update() override {
 		if (!vect.empty()) {
 			auto tmp = std::accumulate(vect.begin(), vect.end(), 0.0) / vect.size();
-			//auto tmp = Sum()/vect.size();
 
 			for (const auto& elem : vect) {
 				std_ += std::pow(elem - tmp, 2);

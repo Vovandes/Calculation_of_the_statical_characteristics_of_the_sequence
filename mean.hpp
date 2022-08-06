@@ -9,7 +9,6 @@ public:
 	void update() override {
 		if (!vect.empty()) {
 			m_arithmetic_average_ = std::accumulate(vect.begin(), vect.end(), 0.0) / vect.size();
-			//m_arithmetic_average_ = Sum() /vect.size();
 		}
 		else {
 			std::cout << "Vector is empty!!!" << std::endl;

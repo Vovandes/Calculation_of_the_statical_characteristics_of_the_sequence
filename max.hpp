@@ -2,8 +2,6 @@
 
 #include "statistics.hpp"
 
-
-
 class Max : public IStatistics {
 public:
 	Max() : m_max_{ std::numeric_limits<double>::min() } { }

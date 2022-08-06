@@ -18,7 +18,7 @@ int main() {
 		new Mean{},
 		new Std{},
 		new Pct90{},
-		new Pct95 {}
+		new Pct95{}
 	};
 
 	double val = 0;
