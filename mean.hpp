@@ -23,15 +23,6 @@ public:
 		return "mean";
 	}
 
-	double Sum() {
-		double sum{ 0.0 };
-		for (const auto& elem : vect) {
-			sum += elem;
-		}
-
-		return sum;
-	}
-
 private:
 	double m_arithmetic_average_;
 };

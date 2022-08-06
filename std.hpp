@@ -2,7 +2,7 @@
 
 #include "statistics.hpp"
 
-class Std : public Mean {
+class Std : public IStatistics {
 public:
 	Std() : std_{ 0.0 } { }
 
