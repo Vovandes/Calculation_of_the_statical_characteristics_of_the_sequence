@@ -2,14 +2,13 @@
 
 #include "statistics.hpp"
 
-class Std : public Mean {
+class Std : public IStatistics {
 public:
 	Std() : std_{ 0.0 } { }
 
 	void update() override {
 		if (!vect.empty()) {
 			auto tmp = std::accumulate(vect.begin(), vect.end(), 0.0) / vect.size();
-			//auto tmp = Sum()/vect.size();
 
 			for (const auto& elem : vect) {
 				std_ += std::pow(elem - tmp, 2);
