@@ -23,6 +23,7 @@ int main() {
 
 	double val = 0;
 
+	std::cout << "Input data: ";
 	while (std::cin >> val) {
 		IStatistics::vect.push_back(val);
 	}
